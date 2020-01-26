@@ -1,4 +1,20 @@
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-<!-- Use it like any other HTML element -->
-<model-viewer style="width: 100%; height: 100%" src="tower-takeover-field_out\tower-takeover-field.gltf" alt="A 3D model of an astronaut" camera-controls background-color="#455A64"></model-viewer>
+<html>
+    <head>
+        <title>VEX Tower Takeover field</title>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+        <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+        <style>
+            html, body {
+                padding: 0;
+                margin: 0;
+            }
+            model-viewer {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <model-viewer src="tower-takeover-field_out\tower-takeover-field.gltf" camera-controls background-color="#455A64"></model-viewer>
+    </body>
+</html>
